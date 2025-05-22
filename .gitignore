@@ -184,4 +184,5 @@ ctre_sim/
 compile_commands.json
 
 # Version file
+src/main/java/org/supurdueper/BuildConstants.java
 .Glass/glass.json
