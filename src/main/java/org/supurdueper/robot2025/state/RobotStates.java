@@ -58,6 +58,7 @@ public final class RobotStates {
 
     // // Information
     public static final Trigger isAimed = new Trigger(() -> aimed);
+    public static final Trigger hasCoral = new Trigger(RobotContainer.getCoralScore()::hasCoral);
 
     // Actions
     public static final Trigger actionScore = driver.rightBumper.and(teleop).or(auto_score);

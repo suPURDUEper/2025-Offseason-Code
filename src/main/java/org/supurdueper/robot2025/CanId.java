@@ -15,7 +15,12 @@ public enum CanId {
     CANCODER_STEER_FR(22, "canivore"),
     CANCODER_STEER_BL(23, "canivore"),
     CANCODER_STEER_BR(24, "canivore"),
-    PIGEON(25, "canivore");
+    PIGEON(25, "canivore"),
+
+    //Funnel
+    TALONFX_FUNNEL(14, "rio"),
+    TALONFX_FUNNEL_TILT(15, "rio"),
+    CANCODER_FUNNEL_TILT(27, "rio");
 
     private final int mDeviceNumber;
     private final String mBus;

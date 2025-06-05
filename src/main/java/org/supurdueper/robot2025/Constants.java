@@ -18,7 +18,11 @@ import static edu.wpi.first.units.Units.*;
 import edu.wpi.first.units.measure.AngularVelocity;
 import edu.wpi.first.units.measure.Distance;
 import edu.wpi.first.units.measure.LinearVelocity;
+import edu.wpi.first.units.measure.Voltage;
+
 import org.supurdueper.lib.utils.ExpCurve;
+
+import com.ctre.phoenix6.configs.CurrentLimitsConfigs;
 
 public final class Constants {
 
@@ -46,6 +50,12 @@ public final class Constants {
         public static final LinearVelocity translationClosedLoopDeadband = MetersPerSecond.of(0.01);
         public static final Distance positionTolerance = Inches.of(0.7);
         public static final Distance robotToBumperCenter = Inches.of(17.75);
+    }
+
+    public static final class FunnelConstants {
+        public static final CurrentLimitsConfigs kCurrentLimit =
+                new CurrentLimitsConfigs().withStatorCurrentLimit(60).withStatorCurrentLimitEnable(true);
+        public static final Voltage kIntakeVoltage = Volts.of(8); //????
     }
 
     public static boolean tuningMode = false;
